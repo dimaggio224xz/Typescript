@@ -1,13 +1,17 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { MainPage } from 'main-pages';
-const routes = [];
+import { Switch, Route, Redirect } from 'react-router-dom';
+import { MainPage } from '@pages';
+const routes = [{ path: '/', Component: MainPage }];
 
 export const App = () => {
   return (
     <div>
-      <MainPage />
-      <Switch>{routes.map()}</Switch>
+      <Switch>
+        {routes.map(({ path, Component }) => (
+          <Route path={path} component={Component} />
+        ))}
+        <Redirect to='/' />{' '}
+      </Switch>
     </div>
   );
 };
