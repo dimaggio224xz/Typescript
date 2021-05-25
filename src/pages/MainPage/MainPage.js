@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { RouteLink } from '@root-routing';
 import { ROOT_CONSTANTS } from '@root-constants';
 import { MainPageStyled } from './MainPage.styled';
 
@@ -13,9 +13,9 @@ export const MainPage = () => {
       <h1>Akulov Dmitry</h1>
       <hr />
       {appList.map(({ title, url }) => (
-        <Link to={url}>
+        <RouteLink to={url}>
           <button>{title}</button>
-        </Link>
+        </RouteLink>
       ))}
     </MainPageStyled>
   );

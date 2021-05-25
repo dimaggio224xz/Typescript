@@ -15,6 +15,9 @@ export const App = () => {
         {routes.map(({ path, exact, Component }) => (
           <Route path={path} exact={exact} component={Component} />
         ))}
+        <Route path='/'>
+          <Redirect push to={ROOT_CONSTANTS.HOME.link} />
+        </Route>
         <Redirect to={ROOT_CONSTANTS.HOME} />
       </Switch>
     </>

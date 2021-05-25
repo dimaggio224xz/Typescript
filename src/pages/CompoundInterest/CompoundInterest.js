@@ -1,5 +1,10 @@
 import React from 'react';
+import { CompoundInterestStyled } from './CompoundInterest.styled';
 
 export const CompoundInterest = () => {
-  return <div>CompoundInterest</div>;
+  return (
+    <CompoundInterestStyled>
+      <h2>Compound Interest</h2>
+    </CompoundInterestStyled>
+  );
 };

@@ -13,6 +13,11 @@ export const MenuStyled = styled.div`
   top: ${({ active }) => (active ? '0px' : '-70px')};
   transition-duration: 0.2s;
   border-radius: 0 0 24px 24px;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
 `;
 
 export const Hamburger = styled.div`
