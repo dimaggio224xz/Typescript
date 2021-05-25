@@ -1,5 +1,5 @@
 import React from 'react';
-import { RouteLink } from '@root-routing';
+import { RouteLink } from '@root-components';
 import { ROOT_CONSTANTS } from '@root-constants';
 import { MainPageStyled } from './MainPage.styled';
 

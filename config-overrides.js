@@ -5,7 +5,7 @@ module.exports = function override(config) {
     '@src': 'src',
     '@pages': 'src/pages',
     '@root-constants': 'src/constants',
-    '@root-routing': 'src/Routing',
+    '@root-components': 'src/components',
     '@root-redux': 'src/redux',
   })(config);
 

@@ -1,12 +1,11 @@
 import React from 'react';
 import { MenuStyled, Hamburger } from './Menu.styled';
 import { useLocation } from 'react-router-dom';
-import { RouteLink } from '@root-routing';
+import { RouteLink } from '@root-components';
 import { ROOT_CONSTANTS } from '@root-constants';
 
 export const Menu = ({ isMenuShow, setMenuShow }) => {
   const { pathname } = useLocation();
-
   return (
     <>
       <MenuStyled active={isMenuShow}>
