@@ -1,4 +1,4 @@
 export const ROOT_CONSTANTS = {
-  HOME: '/home',
-  COMPOUND_INTEREST: '/compound-interest',
+  HOME: { link: '/home', title: 'Home' },
+  COMPOUND_INTEREST: { link: '/compound-interest', title: 'Compound interest' },
 };
